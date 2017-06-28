@@ -1,0 +1,39 @@
+
+/*------------ HEADER ------------*/
+
+
+nav .nav-wrapper {
+	background-color: #FCAC00; 
+    padding-left: 30px;
+    padding-top: 20px;
+    height: 100px;
+}
+
+/*------------ SECTION ------------*/
+
+.fondo-section{
+	background-color: #BFBFBF;
+	padding: 100px 0;
+}
+
+.card {
+    padding-bottom: 30px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]){
+	border-bottom: 1px solid #FCAC00;
+    box-shadow: 0 1px 0 0 #FCAC00;
+}
+
+hr{
+	margin: 30px 0;
+}
+
+.btn{
+	background-color: #7F7F7F;
+	margin: 10px;
+}
+
+.btn:hover{
+	background-color: #3F3F3F;
+}
