@@ -5,6 +5,7 @@
 	<title>To Do App</title>
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -13,7 +14,7 @@
 	<header>
 		<nav>
 		    <div class="nav-wrapper">
-		    	<a href="#" class="brand-logo left">To Do App</a>
+		    	<a href="#" class="brand-logo center">TO DO APP</a>
 		    </div>
 		</nav>
 	</header>
@@ -23,19 +24,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="col offset-s2 s8">
-					<div class="card ">
+					<div class="card z-depth-4">
 						<div class="input-field card-content">
 							<div class="card-content">
-								<input placeholder="Ingresa la tarea" id="tarea" type="text" class="validate">
+								<input placeholder="INGRESE LA TAREA" id="tarea" type="text" class="validate">
 							</div>
 						</div>	
 						<div class="card-content">
-							<h6>To Do items </h6>
+							<h6><i class="material-icons">work</i> To Do items </h6>
 							<div class="tareas-hacer" id="hacer"></div>
-							<hr>
-						</div>							
+							
+						</div>	
 						<div class="card-content">
-							<h6>Completed Items </h6>
+							<hr>
+						</div>												
+						<div class="card-content">
+							<h6><i class="material-icons">done_all</i> Completed Items </h6>
 							<div class="tareas hechas" id="hechas"></div>
 						</div>		
 	        			
@@ -43,11 +47,6 @@
         		</div>	
 			</div>	
 	
-
-
-
-
-
 		</div>		
 	</section>
 	

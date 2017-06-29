@@ -7,17 +7,43 @@ nav .nav-wrapper {
     padding-left: 30px;
     padding-top: 20px;
     height: 100px;
+
+}
+
+.brand-logo{
+    font-weight: 100;	
+    letter-spacing: 5px;
+}
+
+.brand-logo:hover{
+	border-bottom: 1px solid white;
+}
+
+nav .brand-logo {
+    font-size: 3.1rem;
 }
 
 /*------------ SECTION ------------*/
 
 .fondo-section{
+	background-image: url(../img/fondo.png);
 	background-color: #BFBFBF;
+	background-repeat: no-repeat;
+	background-size: cover;
 	padding: 100px 0;
 }
 
 .card {
     padding-bottom: 30px;
+}
+
+h6{
+	color: #1C9695;
+	font-weight: 300;
+}
+
+.material-icons{
+	font-size: 20px;	
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]){
@@ -27,13 +53,32 @@ input[type=text]:not(.browser-default):focus:not([readonly]){
 
 hr{
 	margin: 30px 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #C0EEE3;
+    padding: 0;
+}
+
+.padre{
+	margin: 10px 0;
 }
 
 .btn{
-	background-color: #7F7F7F;
-	margin: 10px;
+	background-color: #FCAC00; 
+    height: 20px;
+    line-height: inherit;	
 }
 
 .btn:hover{
-	background-color: #3F3F3F;
+	background-color: #BFBFBF;
+}
+
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid #FCAC00; 
+    border-bottom: 2px solid #FCAC00; 
+}
+
+.label-dos {
+    font-size: 1.2rem;
+    color: #FCAC00;
 }
