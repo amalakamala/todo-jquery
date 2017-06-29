@@ -3,9 +3,11 @@ var cont = 0;
 
 $(document).ready(function(){
 
-	$('#hacer').html(localStorage.getItem('listItems'));
-	$('#hechas').html(localStorage.getItem('listItemsDos'));
+	$('#hacer').html(localStorage.getItem('listItems')); //Local store para las tareas por hacer
+	$('#hechas').html(localStorage.getItem('listItemsDos')); //Local store para las tareas hechas
 
+
+	//Para crear la nueva tarea
 	$('body').keyup(function(e) {
 		
 		//Al apretar enter se crea la tarea
@@ -19,19 +21,18 @@ $(document).ready(function(){
 				localStorage.setItem('listItems', $('#hacer').html());
 	        	$("#tarea").val("");	
 	        	cont++;
-	        	console.log(cont);
 			}	                
 	    }
-
+	    //Funciones poner y sacar tareas para despues que se cree una nueva tarea
 	    sacar();
 	    poner();
 
 	});
 
-
+// function borrar tareas
 function sacar(){
-	$('.sacar').click(function(){
-		$(this).parent().remove();
+	$('.sacar').click(function(){ //Llama boton sacar
+		$(this).parent().remove(); //
 		localStorage.removeItem('listItems');
 		localStorage.removeItem('listItemsDos');
 	})
@@ -50,6 +51,7 @@ function poner(){
 	})	
 }
 
+//Funciones poner y sacar 
 sacar();
 poner();
 
